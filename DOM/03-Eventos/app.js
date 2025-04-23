@@ -40,7 +40,7 @@ const validar=(event) => {
 
 const validar_letras=(event)=>{
   let tecla=event.key;
-  const letras=/[a-zñáéíóú]/i;
+  const letras=/[a-zñáéíóú\s]/i;
   if(!letras.test(tecla)){
     event.preventDefault();
   }
