@@ -119,9 +119,9 @@ form {
   padding: var(--padding);
 }
 
-input {
+input,select {
   display: block;
-  width: 90%;
+  width: 100%;
   padding: calc(var(--padding) + 4px);
   margin: var(--margin) auto;
   border: solid 1px var(--heavyMetal);
@@ -169,4 +169,8 @@ button:hover {
 .btn:hover {
   background: var(--heavyMetal);
   color: var(--starship);
+}
+
+.border-red{
+  border-color: red;
 }
