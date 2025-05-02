@@ -37,17 +37,28 @@
                 </select>
               </div>
               <div>
-                <input type="number" placeholder="Documento" name="Documento">
+                <input type="number" placeholder="Documento" name="Documento" required>
               </div>
               <div>
-                <input type="text" placeholder="Usuario" name="Usuario">
+                <input type="text" placeholder="Usuario" name="Usuario" required>
               </div>
               <div>
-                <input type="password" placeholder="Contraseña" name="Contrasena">
+                <input type="password" placeholder="Contraseña" name="Contrasena" required>
               </div>
               <div>
                 <input type="checkbox" id="politicas">
                 <label for="politicas">politicas</label>
+              </div>
+              <div class="input__generos">
+                <input type="radio" name="generos" id="hombre" required value="hombre"><label for="hombre">hombre</label >
+                <input type="radio" name="generos" id="mujer" required value="mujer"><label for="mujer">mujer</label >
+              </div>
+              <div class="checkbox__padre">
+                <div class="checkbox__hijo"><input required type="checkbox" name="habilidades[]" value="1"id="HTML"><label for="HTML">HTML</label></div>
+                <div class="checkbox__hijo"><input required type="checkbox" name="habilidades[]" value="2"id="CSS"><label for="CSS">CSS</label></div>
+                <div class="checkbox__hijo"><input required type="checkbox" name="habilidades[]" value="3"id="JS"><label for="JS">JS</label></div>
+                <div class="checkbox__hijo"><input required type="checkbox" name="habilidades[]" value="4"id="C#"><label for="C#">C#</label></div>
+                <div class="checkbox__hijo"><input required type="checkbox" name="habilidades[]" value="5"id="JAVA"><label for="JAVA">JAVA</label></div>
               </div>
               <button type="submit" id="btn_validar" name="btn_validar">Validar</button>
             </form>

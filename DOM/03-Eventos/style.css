@@ -29,6 +29,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.input__generos{
+  display: flex;
+}
 header {
   text-align: center;
   background: var(--heavyMetal);
@@ -172,5 +175,11 @@ button:hover {
 }
 
 .border-red{
-  border-color: red;
+  border: solid 1px red;
+}
+
+.checkbox__hijo{
+  display: flex;
+  align-items: center;
+  width: 30px;
 }

@@ -11,7 +11,9 @@ const documento = document.querySelector('[name="Documento"]')
 const usuario = document.querySelector('[name="Usuario"]')
 const contrasena = document.querySelector('[name="Contrasena"]')
 const politicas = document.querySelector('#politicas');
-const boton=document.querySelector('#btn_validar')
+const boton = document.querySelector('#btn_validar')
+const ciudad = document.querySelector('#ciudad');
+const radios=document.querySelector('[name="generos"]')
 
 
 
@@ -107,7 +109,7 @@ const validar_numeros=(event)=>{
 }
 
 const limpiar = (event) => {
-  if (event.target.value != "") {
+  if (event.target.value != "" && event.target.selectedIndex!=0) {
     event.target.classList.remove("border-red");
     if (event.target.nextElementSibling) {
       event.target.nextElementSibling.remove();
@@ -137,6 +139,7 @@ telefono.addEventListener('blur', limpiar);
 documento.addEventListener('blur', limpiar);
 usuario.addEventListener('blur', limpiar);
 contrasena.addEventListener('blur', limpiar);
+ciudad.addEventListener('blur', limpiar);
 addEventListener('DOMContentLoaded', deshabilitarBoton)
 politicas.addEventListener('change', deshabilitarBoton)
 nombre.addEventListener('keydown', (event) => {
